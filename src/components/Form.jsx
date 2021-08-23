@@ -30,12 +30,20 @@ export default function Form({ inputText, setInputText, todos, setTodos, setStat
           onChange={handleInputChange}
           className="todo__input"
         />
-        <button className="add-todo__button">Add Todo</button>
+        <button className="add-todo__button">
+          <i class="fas fa-plus"></i>
+        </button>
       </div>
       <select onChange={handleStatus} className="todo__filter">
-        <option className="todo__filter-option" value="all">All</option>
-        <option className="todo__filter-option" value="in-progress">In Progress</option>
-        <option className="todo__filter-option" value="completed">Completed</option>
+        <option className="todo__filter-option" value="all">
+          All
+        </option>
+        <option className="todo__filter-option" value="in-progress">
+          In Progress
+        </option>
+        <option className="todo__filter-option" value="completed">
+          Completed
+        </option>
       </select>
     </form>
   );

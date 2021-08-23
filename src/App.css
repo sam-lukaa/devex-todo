@@ -224,9 +224,10 @@ form {
 }
 
 .todo__btn {
-  width: 35%;
-  margin: auto;
-  text-align: center;
-  padding: 0.4rem 1rem;
+  color: whitesmoke;
+  /* width: 35%; */
+  /* margin: auto; */
+  /* text-align: center; */
+  padding: 0.4rem 1rem; 
   margin-right: .4rem
 }

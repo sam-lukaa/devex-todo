@@ -24,7 +24,7 @@ export default function Todo({
   return (
     <div className="todo__item" key={todo.id}>
       <div className="todo__text">
-        <div className="switch">
+        {/* <div className="switch">
           <input
             id="switch-1"
             className="switch__input"
@@ -35,7 +35,7 @@ export default function Todo({
           <label htmlFor="switch-1" className="switch__label">
             Switch
           </label>
-        </div>
+        </div> */}
         <h3
           className={`todo ${
             todo.completed ? "todo__completed" : "todo__uncompleted"
@@ -47,15 +47,19 @@ export default function Todo({
 
       <div>
         <button onClick={() => editModal(todo.id)} className="todo__btn">
-          Edit
+          <i class="fas fa-edit"></i>
         </button>
 
         <button onClick={() => handleModal(todo.id)} className="todo__btn">
-          Remove
+          <i class="fas fa-minus-circle"></i>
         </button>
 
         <button onClick={() => handleComplete(todo.id)} className="todo__btn">
-          {todo.completed ? "Uncheck" : "Check"}
+          {todo.completed ? (
+            <i class="fas fa-check-circle"></i>
+          ) : (
+            <i class="far fa-check-circle"></i>
+          )}
         </button>
       </div>
     </div>
