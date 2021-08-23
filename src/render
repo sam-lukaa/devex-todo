@@ -1,0 +1,76 @@
+/*
+const data = [
+  {
+    name: "Baked Salmon",
+    ingredients: [
+      { name: "Salmon", amount: 1, measurement: "l lb" },
+      { name: "Pine Nuts", amount: 1, measurement: "cup" },
+      { name: "Butter Lettuce", amount: 2, measurement: "cups" },
+      { name: "Yellow Squash", amount: 1, measurement: "med" },
+      { name: "Olive Oil", amount: 3, measurement: "cup" },
+    ],
+    steps: [
+      "Preheat the oven to 350 degrees.",
+      "Spread the olive iol around a glass baking dish.",
+      "Add the salmon, garlic, and pine nuts to the dish.",
+      "Bake for 15 minutes.",
+      "Add the yellow squash and put back in the oven for 30 mins.",
+      "Remove from oven and let cool for 15 minutes. Add the lettuce and serve.",
+    ],
+  },
+  {
+    name: "Fish Tacos",
+    ingredients: [
+      { name: "Whitefish", amount: 1, measurement: "l lb" },
+      { name: "Cheese", amount: 1, measurement: "cup" },
+      { name: "Iceberg Lettuce", amount: 2, measurement: "cups" },
+      { name: "Tomato", amount: 1, measurement: "med" },
+      { name: "Tortillas", amount: 3, measurement: "cup" },
+    ],
+    steps: [
+      "Cook the fish on the grill until hot.",
+      "Place the fish on the 3 tortillas.",
+      "Top them with lettuce, tomato and cheese.",
+    ],
+  },
+];
+
+const recipes = { data };
+
+const Menu = ({ recipes }) => (
+  <div>
+    <article>
+      <header>
+        <h1>Delicious Recipes</h1>
+      </header>
+      <div>
+        {recipes.map((recipe, i) => (
+          <Recipe key={i} {...recipes} />
+        ))}
+      </div>
+    </article>
+  </div>
+);
+
+const Recipe = ({ name, ingredients, steps }) => (
+  <div>
+    <section>
+      <h1>{name}</h1>
+      <ul>
+        {ingredients.map((ingredient, i) => (
+          <li key={i}>{ingredient.name}</li>
+        ))}
+      </ul>
+
+      <section>
+        <h2>Cooking Instructions</h2>
+        {steps.map((step, i) => (
+          <p key={i}>{step}</p>
+        ))}
+      </section>
+    </section>
+  </div>
+);
+
+
+*/
